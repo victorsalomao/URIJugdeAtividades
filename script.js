@@ -1,12 +1,14 @@
 let input = require("fs").readFileSync("stdin", "utf8");
-
 let valores = input.split("\n");
 
-let numeroDoFuncionario = parseInt(valores.shift());
-let numeroHorasTrabalhadas = parseInt(valores.shift());
-let valorDaHora = parseFloat(valores.shift());
+let nomeVendedor = (valores.shift());
+let salarioVendedor = parseInt(valores.shift());
+let vendasEfetuadas = parseFloat(valores.shift());
 
-let salario = (numeroHorasTrabalhadas * valorDaHora);
+let salario = (0.15 * vendasEfetuadas);
+salario = salario + salarioVendedor;
 
-console.log("NUMBER = " + numeroDoFuncionario);
-console.log("SALARY = U$ " + salario.toFixed(2));
+console.log("Esses é o nome do Vendedor " + nomeVendedor);
+console.log("Esses é o salário do vendedor " + salarioVendedor);
+console.log("Essa são as vendas efetuadas " + vendasEfetuadas);
+console.log("TOTAL = R$ " + salario.toFixed(2));

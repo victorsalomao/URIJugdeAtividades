@@ -3,7 +3,9 @@ let valores = input.split("\n");
 
 let A = parseInt(valores.shift());
 let B = parseInt(valores.shift());
+let C = parseInt(valores.shift());
+let D = parseInt(valores.shift());
 
-let X = A + B;
+let DIFERENCA = (A * B - C * D);
 
-console.log("X = " + X);
+console.log("DIFERENCA = " + DIFERENCA);
