@@ -7,5 +7,3 @@ const maiorXC = (C + maiorAB + Math.abs(C - maiorAB)) / 2;
 
 
 console.log(maiorXC +" eh o maior");
-
-
