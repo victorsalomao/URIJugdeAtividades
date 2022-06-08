@@ -1,11 +1,9 @@
 const input = require("fs").readFileSync("stdin", "utf8");
+const [A, B, C, D] = input.split(" ").map(item => parseFloat(item));
+//let valores2 = valores.split(" ");
 
-const [A, B, C] = input.split(" ").map(item => parseInt(item));
-
-const maiorAB = (A + B + Math.abs(A - B)) / 2;
-const maiorXC = (C + maiorAB + Math.abs(C - maiorAB)) / 2;
-
-
-console.log(maiorXC +" eh o maior");
-
+console.log(A.toFixed(1));
+console.log(B);
+console.log(C);
+console.log(D);
 
