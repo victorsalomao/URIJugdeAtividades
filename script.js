@@ -1,9 +1,12 @@
-let input = require("fs").readFileSync("stdin", "utf8");
-let valores = input.split("\n");
+const input = require('fs').readFileSync('stdin', 'utf8');
 
-let distancia = parseInt(valores.shift()); 
+const valores = input.split('\n');
 
-let tempo = (distancia * 2);
+let tempoGasto = parseFloat(valores.shift());
+let velocidadeMedia = parseFloat(valores.shift());
+let automovel = 12;
 
-console.log(tempo + " minutos");
+let distanciaPercorrida = (tempoGasto * velocidadeMedia) / automovel;
+
+console.log(distanciaPercorrida.toFixed(3));
 
